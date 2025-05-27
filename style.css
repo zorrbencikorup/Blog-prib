@@ -1,0 +1,134 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Umum */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  background-color: white;
+  color: black;
+}
+
+/* Header & Navigasi */
+header {
+  background-color: #444;
+  color: white;
+  padding: 15px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+button {
+  float: right;
+  margin-top: -35px;
+  margin-right: 10px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Halaman Beranda */
+.hero {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.foto-profil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+/* Tentang */
+.tentang {
+  max-width: 600px;
+  margin: auto;
+  text-align: justify;
+}
+
+/* Kontak */
+.kontak {
+  max-width: 600px;
+  margin: auto;
+}
+
+.kontak form input,
+.kontak form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.kontak form button {
+  background-color: #444;
+  color: white;
+}
+
+/* Blog */
+.blog {
+  max-width: 800px;
+  margin: auto;
+}
+
+.post {
+  margin-bottom: 30px;
+}
+
+.post h2 a {
+  color: #333;
+  text-decoration: none;
+}
+
+.post h2 a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  border-top: 1px solid #ccc;
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* Sosmed link di footer */
+.sosmed a {
+  color: #444;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.sosmed a:hover {
+  color: #007bff;
+}

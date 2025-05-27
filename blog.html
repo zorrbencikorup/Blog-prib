@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Zoraya</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+    <button onclick="gantiTema()">Ganti Tema</button>
+  </header>
+
+  <main>
+    <section class="blog">
+      <h1>Artikel Terbaru</h1>
+
+      <article class="post">
+        <h2><a href="#">5 Tips Belajar Koding Pakai HP</a></h2>
+        <p>Belajar ngoding nggak harus pakai laptop. Di artikel ini saya bagikan tips belajar pakai HP saja...</p>
+      </article>
+
+      <article class="post">
+        <h2><a href="#">Cerita Pertama Saya di Dunia HTML</a></h2>
+        <p>Saya memulai dari Acode dan pelan-pelan memahami cara kerja website. Ini pengalaman awal saya...</p>
+      </article>
+
+      <article class="post">
+        <h2><a href="#">Kenapa Saya Suka Nulis Blog</a></h2>
+        <p>Blog ini adalah tempat saya menumpahkan isi pikiran. Baca alasannya di sini...</p>
+      </article>
+
+      <!-- Tambahkan lebih banyak artikel di sini -->
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Zoraya. Semua hak dilindungi.</p>
+  </footer>
+
+  <script>
+    let gelap = false;
+    function gantiTema() {
+      if (gelap) {
+        document.body.style.backgroundColor = "white";
+        document.body.style.color = "black";
+        gelap = false;
+      } else {
+        document.body.style.backgroundColor = "#121212";
+        document.body.style.color = "white";
+        gelap = true;
+      }
+    }
+  </script>
+
+</body>
+</html>

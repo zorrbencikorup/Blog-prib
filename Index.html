@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beranda - Blog Zoraya</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+    <button onclick="gantiTema()">Ganti Tema</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Halo,perkenalkan nama saya A***l M****i</h1>
+      <h2>maap yah ku sensor hihi, panggil saja saya zorr</h2>
+      <img src="profi.jpg" alt="Foto Profil" class="foto-profil" width="150" height="150">
+      <p>Selamat datang di blog pribadi saya. Di sini saya berbagi cerita, ide, dan pengalaman.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Zoraya. Semua hak dilindungi.</p>
+    <div class="sosmed">
+      <a href="https://www.instagram.com/zorrsavant_?igsh=MWJlM254Mjg5ZjF0Zw==">Instagram</a> |
+      <a href="https://wa.me/6285739641450">WhatsApp</a> |
+      <a href="https://t.me/zorrbencikorup">Telegram</a>
+    </div>
+  </footer>
+
+  <script>
+    let gelap = false;
+    function gantiTema() {
+      if (gelap) {
+        document.body.style.backgroundColor = "white";
+        document.body.style.color = "black";
+        gelap = false;
+      } else {
+        document.body.style.backgroundColor = "#121212";
+        document.body.style.color = "white";
+        gelap = true;
+      }
+    }
+  </script>
+
+</body>
+</html>

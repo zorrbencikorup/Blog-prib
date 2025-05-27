@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak - Blog Zoraya</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+    <button onclick="gantiTema()">Ganti Tema</button>
+  </header>
+
+  <main>
+    <section class="kontak">
+      <h1>Hubungi Saya</h1>
+      <p>Kamu bisa menghubungi saya melalui formulir di bawah ini:</p>
+
+      <form onsubmit="return kirimPesan()">
+        <label for="nama">Nama:</label><br>
+        <input type="text" id="nama" name="nama"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="pesan">Pesan:</label><br>
+        <textarea id="pesan" name="pesan"></textarea><br><br>
+
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Zoraya. Semua hak dilindungi.</p>
+  </footer>
+
+  <script>
+    let gelap = false;
+    function gantiTema() {
+      if (gelap) {
+        document.body.style.backgroundColor = "white";
+        document.body.style.color = "black";
+        gelap = false;
+      } else {
+        document.body.style.backgroundColor = "#121212";
+        document.body.style.color = "white";
+        gelap = true;
+      }
+    }
+
+    function kirimPesan() {
+      const nama = document.getElementById("nama").value;
+      const email = document.getElementById("email").value;
+      const pesan = document.getElementById("pesan").value;
+
+      if (!nama || !email || !pesan) {
+        alert("Semua kolom harus diisi.");
+        return false;
+      }
+
+      alert("Pesan berhasil dikirim. Terima kasih, " + nama + "!");
+      return false; // tidak kirim form beneran (untuk simulasi)
+    }
+  </script>
+
+</body>
+</html>

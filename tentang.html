@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang Saya - Blog Zoraya</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+    <button onclick="gantiTema()">Ganti Tema</button>
+  </header>
+
+  <main>
+    <section class="tentang">
+      <h1>Tentang Saya</h1>
+      <p>Halo! Nama saya Zoraya. Saya adalah seorang penulis, pembelajar, dan pencinta teknologi.</p>
+      <p>Saya membuat blog ini sebagai ruang untuk mengekspresikan pemikiran, cerita, dan berbagi ilmu dengan orang lain.</p>
+      <p>Hobi saya termasuk membaca, menulis, dan membuat desain web seperti ini!</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Zoraya. Semua hak dilindungi.</p>
+  </footer>
+
+  <script>
+    let gelap = false;
+    function gantiTema() {
+      if (gelap) {
+        document.body.style.backgroundColor = "white";
+        document.body.style.color = "black";
+        gelap = false;
+      } else {
+        document.body.style.backgroundColor = "#121212";
+        document.body.style.color = "white";
+        gelap = true;
+      }
+    }
+  </script>
+
+</body>
+</html>
