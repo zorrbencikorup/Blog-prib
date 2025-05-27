@@ -25,15 +25,15 @@
       <h1>Hubungi Saya</h1>
       <p>Kamu bisa menghubungi saya melalui formulir di bawah ini:</p>
 
-      <form onsubmit="return kirimPesan()">
+      <form action="https://formspree.io/f/mblonrka" method="POST">
         <label for="nama">Nama:</label><br>
-        <input type="text" id="nama" name="nama"><br><br>
+        <input type="text" name="nama" required><br><br>
 
         <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br><br>
+        <input type="email" name="email" required><br><br>
 
         <label for="pesan">Pesan:</label><br>
-        <textarea id="pesan" name="pesan"></textarea><br><br>
+        <textarea name="pesan" required></textarea><br><br>
 
         <button type="submit">Kirim</button>
       </form>
@@ -56,20 +56,6 @@
         document.body.style.color = "white";
         gelap = true;
       }
-    }
-
-    function kirimPesan() {
-      const nama = document.getElementById("nama").value;
-      const email = document.getElementById("email").value;
-      const pesan = document.getElementById("pesan").value;
-
-      if (!nama || !email || !pesan) {
-        alert("Semua kolom harus diisi.");
-        return false;
-      }
-
-      alert("Pesan berhasil dikirim. Terima kasih, " + nama + "!");
-      return false; // tidak kirim form beneran (untuk simulasi)
     }
   </script>
 
